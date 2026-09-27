@@ -354,6 +354,7 @@ p {
     padding: 20px;
     margin-bottom: 25px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    position: relative;
 }
 .section-card h3 {
     font-size: 20px;
@@ -377,6 +378,27 @@ p {
 }
 .back-to-top a:hover {
     color: #3b82f6;
+}
+
+/* 右上の遷移ボタンのスタイル */
+.card-btn-topright {
+    position: absolute;
+    top: 15px;          /* 上からの位置調整 */
+    right: 15px;        /* 右からの位置調整 */
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #3b82f6; /* ボタンの背景色（青系） */
+    color: #ffffff;            /* 文字色（白） */
+    text-decoration: none;
+    border-radius: 4px;        /* 角丸 */
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+/* ホバー（マウスを乗せたとき）の効果 */
+.card-btn-topright:hover {
+    background-color: #66a0f6; /* 濃い青色に変化 */
 }
 
 /*編集ページの説明文のスタイル*/
