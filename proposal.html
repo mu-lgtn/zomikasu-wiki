@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウィキ編集-ゾミウィキ@ゾミカスダンジョン攻略wiki</title>
+    <!-- cssファイル読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ヘッダー -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- タイトルロゴをトップページへリンクする-->
+            <a href="index.html" class="logo">ゾミウィキ</a>
+            
+            <!-- ハンバーガーボタン -->
+            <button class="hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- ナビゲーションメニュー -->
+            <nav class="nav-menu" id="js-nav-menu">
+                <ul>
+                    <!-- メニューの各リンク先 -->
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="strategy.html">ダンジョン攻略</a></li>
+                    <li><a href="weapon.html">ブキ一覧</a></li>
+                    <li><a href="enemy_dictionary.html">ザコ敵図鑑</a></li>
+                    <li><a href="boss_dictionary.html">ボス図鑑</a></li>
+                    <li><a href="proposal.html">ウィキ編集</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <h1>ゾミウィキ編集</h1>
+
+        <p class="edit-description">
+            このウィキについて修正・追加の提案がある場合は、このフォームからお知らせください。<br>
+            管理人が確認したうえで、サイトに反映します。
+        </p>
+
+        <form
+            id="proposal-form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdG8PczNc1UwLNghitKEVK2fIKkQqOF4XQN8Qh2OPohUCoTUA/formResponse"
+            method="POST"
+            target="hidden-iframe"
+        >
+        
+            <label for="change-area">
+                対象箇所 <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="change-area"
+                name="entry.827456172"
+                required
+            >
+        
+            <label for="before-edit">
+                変更前
+            </label>
+
+            <textarea
+                id="before-edit"
+                name="entry.1541315683"
+            ></textarea>
+        
+            <label for="after-edit">
+                変更後 <span class="required">*</span>
+            </label>
+
+            <textarea
+                id="after-edit"
+                name="entry.1031071008"
+                required
+            ></textarea>
+
+            <!-- ボタンエリア -->
+            <button type="submit" class="edit-button">送信</button>
+        
+        </form>
+
+        <!-- 完了通知テキスト -->
+        <div id="success-message">
+            送信が完了しました。ご提案ありがとうございました！
+        </div>
+
+        <!-- iframeを使ってgoogleフォーム標準の完了画面を制限 -->
+        <iframe
+            id="hidden-iframe"
+            name="hidden-iframe"
+            class="hidden-iframe"
+            onload="showSuccessMessage()"
+        ></iframe>
+
+    </main>
+    
+    <!-- jsファイル読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>

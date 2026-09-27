@@ -32,6 +32,7 @@ body {
     align-items: center;
     position: relative;
 }
+
 /* サイトロゴのスタイル */
 .logo {
     font-size: 24px;
@@ -55,6 +56,7 @@ body {
     cursor: pointer;
     z-index: 110;
 }
+
 /* 三本線の共通設定 */
 .hamburger span {
     display: block;
@@ -65,6 +67,7 @@ body {
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
 }
+
 /* 各線の位置調整 */
 .hamburger span:nth-child(1) { top: 1px; }
 .hamburger span:nth-child(2) { top: 11px; }
@@ -107,7 +110,6 @@ body {
     visibility: visible;
     transform: translateY(0);
 }
-
 .nav-menu ul {
     list-style: none;
 }
@@ -146,6 +148,7 @@ h2 {
 p {
     margin-bottom: 10px;
 }
+
 /*ボタンのスタイル*/
 #section-hero {
     display: flex;
@@ -188,6 +191,7 @@ p {
     transform: translateY(0);  /* 押したときに元の高さに戻る */
     box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2); /* 影を薄くする */
 }
+
 /*ボタン内のテキストの詳細設定*/
 .btn-text {
     display: inline-flex;
@@ -205,6 +209,7 @@ p {
     opacity: 0.8;
     margin-top: 2px;
 }
+
 /*トップページのお知らせのスタイル*/
 .news-box {
     max-height: 250px;
@@ -231,6 +236,7 @@ p {
     color: #333;
     grid-column: 2;
 }
+
 /*ブキページ目次(リンク一覧)のスタイル*/
 .weapon-anchor {
     background-color: #f0f6ff;
@@ -261,6 +267,7 @@ p {
     text-decoration: underline;
     color: #1d4ed8;
 }
+
 /*ブキテーブルのスタイル*/
 .table-wrapper {
     overflow-x: auto; /* スマホ時の横スクロール対策 */
@@ -338,7 +345,8 @@ p {
         width: 22%; /* 射程・範囲 */
     }
 }
-/*ブキカードのスタイル*/
+
+/*詳細カードのスタイル*/
 .section-card {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
@@ -369,4 +377,83 @@ p {
 }
 .back-to-top a:hover {
     color: #3b82f6;
+}
+
+/*編集ページの説明文のスタイル*/
+.edit-description {
+    color: #666;
+    line-height: 1.7;
+}
+
+/*編集フォームのパーツのスタイル*/
+label {
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+textarea {
+    min-height: 180px;
+    resize: none;
+}
+.required {
+    color: #dc2626;
+}
+.hidden-iframe {
+    display: none;
+    width: 0;
+    height: 0;
+    border: none;
+    opacity: 0;
+}
+
+/*フォーム送信ボタンのスタイル*/
+.edit-button {
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #3b82f6;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.edit-button:hover {
+    background-color: #66a0f6
+}
+.edit-button:active {
+    background-color: #3b82f6;
+}
+
+/*送信完了テキストのスタイル*/
+.message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+}
+#success-message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #d1fae5;
+    color: #065f46;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
 }
