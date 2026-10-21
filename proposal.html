@@ -85,13 +85,16 @@
             ></textarea>
 
             <!-- ボタンエリア -->
-            <button type="submit" class="edit-button">送信</button>
+            <button id="submit-btn" type="submit" class="edit-button">送信</button>
         
         </form>
 
         <!-- 完了通知テキスト -->
         <div id="success-message">
             送信が完了しました。ご提案ありがとうございました！
+        </div>
+        <div id = "error-message">
+            送信に時間がかかっているか、失敗しています。時間をおいて再度お試しください。
         </div>
 
         <!-- iframeを使ってgoogleフォーム標準の完了画面を制限 -->

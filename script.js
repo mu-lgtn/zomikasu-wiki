@@ -34,22 +34,57 @@ window.addEventListener('DOMContentLoaded', () => {
 });
     
 let submitted = false;
-document.getElementById("proposal-form").onsubmit = function() {
-    submitted = true;
-}
-function showSuccessMessage() {
-    if (submitted) {
-        document.getElementById("proposal-form").reset();
-        document.getElementById("success-message").style.display = "block";
-        submitted = false;
+let timeoutId = null;
+const proposalForm = document.getElementById("proposal-form");
+const submitButton = document.getElementById("submit-btn");
+const successMessage = document.getElementById("success-message");
+const errorMessage = document.getElementById("error-message");
+
+if (proposalForm) {
+    proposalForm.onsubmit = function() {
+        submitted = true;
+
+        if (submitButton) submitButton.disabled = true;
+        if (successMessage) successMessage.style.display = "none";
+        if (errorMessage) errorMessage.style.display = "none";
+
+        timeoutId = setTimeout(() => {
+            if (submitted) {
+                submitted = false;
+                resetSubmitButton();
+                if (errorMessage) {
+                    errorMessage.style.display = "block";
+                }
+            }
+        },8000);
     }
 }
+
+function showSuccessMessage() {
+    if (timeoutId) clearTimeout(timeoutId);
+    
+    if (submitted) {
+        if (proposalForm) proposalForm.reset();
+        if (successMessage) successMessage.style.display = "block";
+        submitted = false;
+        resetSubmitButton();
+    }
+}
+
+function resetSubmitButton() {
+    if (submitButton) {
+        submitButton.disabled = false;
+    }
+}
+
 const inputs = document.querySelectorAll("#proposal-form input, #proposal-form textarea");
-const successMessage = document.getElementById("success-message");
 inputs.forEach(input => {
     input.addEventListener("input", () => {
-        if (successMessage.style.display == "block") {
+        if (successMessage && successMessage.style.display == "block") {
             successMessage.style.display = "none";
+        }
+        if (errorMessage && errorMessage.style.display == "block") {
+            errorMessage.style.display = "none";
         }
     });
 });

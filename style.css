@@ -462,8 +462,9 @@ textarea {
 .edit-button:hover {
     background-color: #66a0f6
 }
-.edit-button:active {
-    background-color: #3b82f6;
+.edit-button:disabled {
+    color: #c9c9c9;
+    background-color: #7d7d7d;
 }
 
 /*送信完了テキストのスタイル*/
@@ -479,6 +480,16 @@ textarea {
     padding: 15px;
     background: #d1fae5;
     color: #065f46;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+#error-message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #cccccc;
+    color: #000;
     border-radius: 6px;
     font-weight: bold;
     text-align: center;
