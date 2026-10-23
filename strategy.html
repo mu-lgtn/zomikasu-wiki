@@ -49,13 +49,24 @@
         <section class="section-anchor" style="margin-bottom: 50px;">
             <h2>目次 (クリックでスクロール)</h2>
             <ul>
-                <li><a href="#dungeon-normal-first">ダンジョン - 通常階前半</a></li>
-                <li><a href="#dungeon-normal-second">ダンジョン - 通常階後半</a></li>
-                <li><a href="#dungeon-boss">ダンジョン - ボスフロア</a></li>
-                <li><a href="#dungeon-top">ダンジョン - 最上階</a></li>
+                <li>
+                    <a href="#dungeon">ダンジョン</a>
+                    <ul>
+                        <li><a href="#dungeon-normal-first"> ダンジョン - 通常階前半</a></li>
+                        <li><a href="#dungeon-normal-second"> ダンジョン - 通常階後半</a></li>
+                        <li><a href="#dungeon-boss"> ダンジョン - ボスフロア</a></li>
+                        <li><a href="#dungeon-top"> ダンジョン - 最上階</a></li>
+                    </ul>
+                </li>
                 <li><a href="#boss-rush">ボスラッシュ</a></li>
                 <li><a href="#north-war">最北戦線</a></li>
-                <li><a href="#zomikasu-rta">ゾミカスRTA</a></li>
+                <li>
+                    <a href="#zomikasu-rta">ゾミカスRTA</a>
+                    <ul>
+                        <li><a href="#zomikasu-rta-category"> カテゴリー</a></li>
+                        <li><a href="#zomikasu-rta-event"> 種目</a></li>
+                    </ul>
+                </li>
             </ul>
         </section>
 
@@ -63,7 +74,7 @@
         <section class="section-details">
             
             <!-- 部門ごとに分割 -->
-            <h2>ダンジョン攻略</h2>
+            <h2 id="dungeon">ダンジョン攻略</h2>
             <div>
                 <article id="dungeon-normal-first" class="section-card">
                     <a href="proposal.html?area=ダンジョン低階層" class="card-btn-topright">編集する</a>
@@ -132,13 +143,52 @@
                 </article>
             </div>
 
-            <h2>RTA攻略</h2>
+            <h2 id="zomikasu-rta">RTA攻略</h2>
+            <p>ゾミカスRTAとは、ダンジョン攻略開始から目標達成までのタイムを競う競技。<br>
+               目標は様々存在しているが、その中でも10階層を攻略するRTAは飛び抜けて人気が高い。</p>
             <div>
-                <article id="zomikasu-rta" class="section-card">
-                    <a href="proposal.html?area=ゾミカスRTA" class="card-btn-topright">編集する</a>
-                    <h3>ゾミカスRTA</h3>
+                <h3 id="zomikasu-rta-category">カテゴリー</h3>
+                <article id="zomikasu-rta-ss" class="section-card">
+                    <a href="proposal.html?area=RTA-SS" class="card-btn-topright">編集する</a>
+                    <h3>Set Seed(SS)</h3>
                     <div class="section-info">
-                        <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
+                        <p>ダンジョン生成の基準となるSeed値(番号)を固定して最速を目指すカデコリー。<br>
+                           ダンジョンの内容(アイテム、敵、構造)が固定されるため、最適なルート決めが可能。</p>
+                    </div>
+                    <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                </article>
+                <article id="zomikasu-rta-rs" class="section-card">
+                    <a href="proposal.html?area=RTA-RS" class="card-btn-topright">編集する</a>
+                    <h3>Random Seed(RS)</h3>
+                    <div class="section-info">
+                        <p>ダンジョン生成の基準となるSeed値(番号)を指定せず、ランダムに生成して最速を目指すカデコリー。<br>
+                           決まったルートが存在しないため、感覚がだけが頼りとなる場合もある。<br>
+                           リセマラされることが多い。</p>
+                    </div>
+                    <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                </article>
+            </div>
+            <div>
+                <h3 id="zomikasu-rta-event">種目</h3>
+                <article id="zomikasu-rta-ten" class="section-card">
+                    <a href="proposal.html?area=RTA-10階" class="card-btn-topright">編集する</a>
+                    <h3>10階層攻略</h3>
+                    <div class="section-info">
+                        <p>10階層のボスを撃破するまでの時間を競う種目。<br>
+                           装飾品の獲得条件にもなっているため、認知度が高い。</p>
+                        <p>SSが特に活きる種目で、2分を切ることもある。<br>
+                           SSの1:43が現時点での世界記録。</p>
+                    </div>
+                    <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                </article>
+                <article id="zomikasu-rta-cross" class="section-card">
+                    <a href="proposal.html?area=RTA-十字架" class="card-btn-topright">編集する</a>
+                    <h3>十字架</h3>
+                    <div class="section-info">
+                        <p>十字架以外の一切の武器を取ることを縛った上で、10階層に到達するまでの時間を競う種目。<br>
+                           1階層から十字架を取る必要があり、敵を殺すことは許されない。<br>
+                           一部の変態向けの種目。</p>
+                        <p>RSの4:28が現時点での世界記録。</p>
                     </div>
                     <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
                 </article>
