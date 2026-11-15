@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <!-- cssファイル読み込み -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- ヘッダー -->
     <header class="site-header">
         <div class="header-container">
             <a href="index.html" class="logo">ゾミウィキ</a>
-            
+
             <!-- ハンバーガーボタン -->
             <button class="hamburger" id="js-hamburger">
                 <span></span>
@@ -39,16 +41,43 @@
     <!-- メインコンテンツ -->
     <main class="main-content">
         <!-- ページタイトル -->
-        <section class="boss_dic-top" style="margin-bottom: 50px;">
+        <section class="boss_dic-top" style="margin-bottom: 30px;">
             <h1>天使の調伏</h1>
-            <p>天使は降魔術Lv.8から調伏できるようになる敵である。通常のダンジョンに出てくることはない。</p>
+            <p>天使は降魔術Lv.8から調伏できるようになる敵である。<br>
+                通常のダンジョンに出てくることはない。<br>
+                天使の攻撃は強いものばかりで、初見で調伏するのはほぼ不可能だ。<br>
+                攻撃のパターンと避け方を覚え、ぜひ称号の獲得を目指してほしい。</p>
         </section>
 
         <!-- リンク一覧 -->
-        <section class="section-anchor" style="margin-bottom: 50px;">
+        <section id="anchor" class="section-anchor" style="margin-bottom: 50px;">
             <h2>目次 (クリックでスクロール)</h2>
             <ul>
                 <li><a href="#a1">壁から腕</a></li>
+                <li><a href="#a2">波動弾</a></li>
+                <li><a href="#a3">全方位弾幕</a></li>
+                <li><a href="#a4">螺旋弾</a></li>
+                <li><a href="#a5">薙ぎ払い</a></li>
+                <li><a href="#a6">叩きつけ</a></li>
+                <li><a href="#a7">床爆撃</a></li>
+                <li><a href="#a8">追尾光球</a></li>
+                <li><a href="#a9">格子レーザー</a></li>
+                <li><a href="#a10">回転X砲台</a></li>
+                <li><a href="#a11">櫛の腕</a></li>
+                <li><a href="#a12">弾の壁</a></li>
+                <li><a href="#a13">突進</a></li>
+                <li><a href="#a14">扇撃ち</a></li>
+                <li><a href="#a15">瞬間移動散弾</a></li>
+                <li><a href="#a16">殴り飛ばし</a></li>
+                <li><a href="#a17">反射弾</a></li>
+                <li><a href="#a18">足跡の爆弾</a></li>
+                <li><a href="#a19">重力</a></li>
+                <li><a href="#a20">狙撃</a></li>
+                <li><a href="#a21">巨大波動</a></li>
+                <li><a href="#a22">蛇行弾</a></li>
+                <li><a href="#a23">黒斧</a></li>
+                <li><a href="#a24">四連黒斧</a></li>
+                <li><a href="#a25">四武器</a></li>
             </ul>
         </section>
 
@@ -57,15 +86,17 @@
             <h2>基本情報</h2>
             <h4>色</h4>
             <p>第一形態：薄橙<br>
-               第二形態：白</p>
+                第二形態：白</p>
             <h4>見た目</h4>
             <p>大きめの丸に腕が4本生えており、第三形態になるとさらに4本増える。<br>
-               <s>天使って見た目ではない。</s></p>
+                <s>天使って見た目ではない。</s>
+            </p>
             <p>この腕は制作者の実写らしい。素晴らしい開発者精神だ。</p>
-            
+
             <!-- 技ごとに分割 -->
             <h2>攻撃パターン</h2>
-            <p>なんと全56種。解説の都合上、各攻撃に番号を振った。</p>
+            <p>なんと全56種。解説の都合上、各攻撃に番号を振った。<br>
+                オレンジの技は第二形態以降でのみ出る(ただし、開幕ルーティンを除く)。</p>
             <article id="a1" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>1. 壁から腕</h3>
@@ -74,13 +105,13 @@
                     <p>プレイヤーに近い位置の壁から腕が生えてくる。<br>
                         生えてきた後もしばらく残っているが、一度掴まれると消える。</p>
                     <p>この腕に触れると、腕の方向に真っ直ぐ吹っ飛ばされる。<br>
-                       このとき飛ばされる方向に天使がいると、接触により一確というコンボをくらう。</p>
+                        このとき飛ばされる方向に天使がいると、接触により一確というコンボをくらう。</p>
                     <h4>対処法</h4>
                     <p>腕の長さは限られているので、ステージの中央にいれば無論当たらない。<br>
-                       警告が出てから動き出しても割と避けられる。<br>
-                       天使から逃げているときに、ミスでぶつからないように注意すれば十分だ。</p>
+                        警告が出てから動き出しても割と避けられる。<br>
+                        天使から逃げているときに、ミスでぶつからないように注意すれば十分だ。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a2" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -88,40 +119,40 @@
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>手にエネルギーを溜め、大きめの球にして1~2個飛ばしてくる。<br>
-                       球は着弾すると爆発するオレンジのものと、途中で破裂して十字にビームを出す青の2種類がある。<br>
-                       どちらが出てくるかはランダム。</p>
+                        球は着弾すると爆発するオレンジのものと、途中で破裂して十字にビームを出す青の2種類がある。<br>
+                        どちらが出てくるかはランダム。</p>
                     <h4>対処法</h4>
                     <p>どちらも動き続けていれば躱せる。<br>
-                       青はプレイヤーの真上か真横にくると破裂してビームを出してくるので注意。<br>
-                       青は壁に当たると消える。</p>
+                        青はプレイヤーの真上か真横にくると破裂してビームを出してくるので注意。<br>
+                        青は壁に当たると消える。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a3" class="section-card">
+            <article id="a3" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>3. 全方位弾幕</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>360度に20個のオレンジの小さめの球を4回飛ばす。<br>
-                       球は毎回ズレているので、隙間になる部分も毎回異なる。</p>
+                        球は毎回ズレているので、隙間になる部分も毎回異なる。</p>
                     <h4>対処法</h4>
                     <p>球の数が多いとはいえ、隙間は大きいのでそこに入れば良い。<br>
-                       天使から遠いほうが隙間が大きくなり避けやすい。</p>
+                        天使から遠いほうが隙間が大きくなり避けやすい。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a4" class="section-card">
+            <article id="a4" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>4. 螺旋弾</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>天使の手を中心に、螺旋を描くように全方位弾幕と同じ球をたくさん飛ばしてくる。<br>
-                       途中で螺旋の向きが逆になる。</p>
+                        途中で螺旋の向きが逆になる。</p>
                     <h4>対処法</h4>
                     <p>球ごとに発射された時間が違う分、全方位弾幕より隙間が狭い(気がする)。<br>
-                       かなり距離をとって避けるようにしたい。</p>
+                        かなり距離をとって避けるようにしたい。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a5" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -129,51 +160,52 @@
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>ゆっくりと角度を変える太めのビームを2回撃ってくる。<br>
-                       1本目が終わる前に2本目を撃ち始める。</p>
+                        1本目が終わる前に2本目を撃ち始める。</p>
                     <h4>対処法</h4>
                     <p>回転がそこまで速くないので動き続けていれば避けられる。<br>
-                       少しの移動で避けることができるので、天使に近いほうが良い。</p>
+                        少しの移動で避けることができるので、天使に近いほうが良い。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a6" class="section-card">
+            <article id="a6" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>6. 叩きつけ</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>地団駄を踏むような動きをして、ランドルト環状のウェーブを3回飛ばしてくる。<br>
-                       切れ目の位置は毎回ズレている。</p>
+                        切れ目の位置は毎回ズレている。</p>
                     <h4>対処法</h4>
                     <p>攻撃が始まる前から立ち止まっているだけで避けられる。<br>
-                       切れ目はズレるが、ギリギリ当たらない。</p>
+                        切れ目はズレるが、ギリギリ当たらない。<br>
+                        ただ予備動作が少なく判別しづらいので注意。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a7" class="section-card">
+            <article id="a7" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>7. 床爆撃</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>プレイヤーの近くに大きめの爆発を14回起こす。<br>
-                       警告のゲージがMAXになると爆発するので、それまでは範囲内にいても大丈夫だ。</p>
+                        警告のゲージがMAXになると爆発するので、それまでは範囲内にいても大丈夫だ。</p>
                     <h4>対処法</h4>
                     <p>爆発はある程度ランダムな位置に起こるので、避けれない時もある。<br>
-                       ひたすら円が無いところに走るしかない。</p>
+                        ひたすら円が無いところに走るしかない。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a8" class="section-card">
+            <article id="a8" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>8. 追尾光球</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>紫の大きめの球を3つ飛ばしてくる。<br>
-                       この球はホーミングしてきて、しばらくすると自動で爆発する。</p>
+                        この球はホーミングしてきて、しばらくすると自動で爆発する。</p>
                     <h4>対処法</h4>
                     <p>かなり球のスピードが速いので、ステージを大回りするようにして逃げる。<br>
-                       十分な距離をとっていないと、最後の爆発に巻き込まれる。</p>
+                        十分な距離をとっていないと、最後の爆発に巻き込まれる。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a9" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -181,26 +213,26 @@
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>縦方向のビームを4本、横方向のビームを3本、順に飛ばしてくる。<br>
-                       ビームは継続時間こそ短いものの、かなり太い。</p>
+                        ビームは継続時間こそ短いものの、かなり太い。</p>
                     <h4>対処法</h4>
                     <p>本数としては少なく間隔が大きいので、余裕をもってビームの間に入れる。<br>
-                       警告よりもビームが太い点には注意。</p>
+                        警告よりもビームが太い点には注意。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a10" class="section-card">
+            <article id="a10" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>10. 回転X砲台</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>十字状に回転しながらビームを発射する砲台を2個設置する。<br>
-                       1つはプレイヤーの近くに、もう1つは少し遠くに設置される。</p>
+                        1つはプレイヤーの近くに、もう1つは少し遠くに設置される。</p>
                     <h4>対処法</h4>
                     <p>なるべく砲台に近づいて一緒に回転する。<br>
-                       しかし2つの砲台は回転方向が異なるので、しばしば絶対に避けられない状況になる。<br>
-                       神に祈るしかない。</p>
+                        しかし2つの砲台は回転方向が異なるので、しばしば絶対に避けられない状況になる。<br>
+                        神に祈るしかない。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a11" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -208,27 +240,27 @@
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>左右の壁から、一定間隔で腕が5本生えてくる。<br>
-                       この腕は割とすぐに消える。<br>
-                       さらに、ステージ中央で5回爆発が起こる。</p>
+                        この腕は割とすぐに消える。<br>
+                        さらに、ステージ中央で5回爆発が起こる。</p>
                     <h4>対処法</h4>
                     <p>爆発はランダムな位置で起こるので、狙って避けるのは難しい。<br>
-                       腕の間隔がかなり広いのでその間に入るのが良いだろう。<br>
-                       多少壁際に追い詰められるので、腕が消えたらすぐに中央に戻りたい。</p>
+                        腕の間隔がかなり広いのでその間に入るのが良いだろう。<br>
+                        多少壁際に追い詰められるので、腕が消えたらすぐに中央に戻りたい。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a12" class="section-card">
+            <article id="a12" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>12. 弾の壁</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>全方位弾幕と同じオレンジの球を上から下に3回、左から右に飛ばしてくる。<br>
-                       縦のときは左右2箇所に、横のときは中央に隙間が空いている。</p>
+                        縦のときは左右2箇所に、横のときは中央に隙間が空いている。</p>
                     <h4>対処法</h4>
                     <p>隙間までの距離がかなり遠く弾速も遅くないので、始めから隙間に寄っていないとほぼ当たる。<br>
-                       縦の隙間は中央・右寄り・左寄りで固定なので、一発被弾を覚悟すれば残りは避けられる。</p>
+                        縦の隙間は中央・右寄り・左寄りで固定なので、一発被弾を覚悟すれば残りは避けられる。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a13" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -236,53 +268,53 @@
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>プレイヤーに狙いを定めて、勢いよく突っ込んでくる。<br>
-                       触れたらもちろん即死だ。
-                       壁にぶつかると衝撃で画面が揺れ、全方位弾幕を1回飛ばす。</p>
+                        壁にぶつかると衝撃で画面が揺れ、全方位弾幕を1回飛ばす。<br>
+                        まれに壁にめり込んで動けなくなる。</p>
                     <h4>対処法</h4>
                     <p>横に動き続けていれば普通に躱せる。<br>
-                       壁が凹んだところに引っ掛けると、ほぼ無力化できる。</p>
+                        壁が凹んだところに引っ掛けると、ほぼ無力化できる。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a14" class="section-card">
+            <article id="a14" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>14. 扇撃ち</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>全方位弾幕と同じ球8個を3回、角度をつけて飛ばしてくる。<br>
-                       始めは広角だが、だんだんと真っ直ぐに球を集中させて飛ばしてくる。<br>
-                       このとき、球を飛ばしてくる向きは1回目から変わらない。</p>
+                        始めは広角だが、だんだんと真っ直ぐに球を集中させて飛ばしてくる。<br>
+                        このとき、球を飛ばしてくる向きは1回目から変わらない。</p>
                     <h4>対処法</h4>
                     <p>球は腕から真っ直ぐにしか飛ばせないので、腕の中にいると簡単に避けられる。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a15" class="section-card">
+            <article id="a15" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>15. 瞬間移動散弾</h3>
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>ランダムな壁際にワープして全方位弾幕と同じ球を9個投げるのを3回繰り返す。<br>
-                       かなり離れた位置にワープし、球も広角である。</p>
+                        かなり離れた位置にワープし、球も広角である。</p>
                     <h4>対処法</h4>
                     <p>球がバラけているので、隙間も大きくかなり避けやすい。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a16" class="section-card">
+            <article id="a16" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>16. 殴り飛ばし</h3>
                 <div class="section-info">
                     <p>右に大きく飛ばされ、弾幕がはじまる。<br>
-                       球は全方位弾幕と同じ。
-                       左の壁から十分に離れていないと、発生しない。</p>
+                        球は全方位弾幕と同じ。
+                        左の壁から十分に離れていないと、発生しない。</p>
                     <h4>対処法</h4>
                     <p>かなり右端でないと避けるのに十分な隙間がない。<br>
-                       そのため右手が邪魔になり、物理的に攻撃がしずらい。<br>
-                       一発あたる覚悟で突っ込めば、左端は安置だ。<br>
-                       第一形態の開幕ルーティンに含まれているが、ステージの左端にいればキャンセルできる。</p>
+                        そのため右手が邪魔になり、物理的に攻撃がしずらい。<br>
+                        一発あたる覚悟で突っ込めば、左端は安置だ。<br>
+                        第一形態の開幕ルーティンに含まれているが、ステージの左端にいればキャンセルできる。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a17" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -290,12 +322,12 @@
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>壁にあたると跳ね返る緑の大きめの球を12個出す。<br>
-                       4回壁にあたって跳ね返るか、一定時間が経過するまで消えない。</p>
+                        4回壁にあたって跳ね返るか、一定時間が経過するまで消えない。</p>
                     <h4>対処法</h4>
                     <p>弾速は遅めで壁にあたるときれいに反射するので、軌道の予測は簡単。<br>
-                       それでもなるべく広い所で避けるようにしたい。</p>
+                        それでもなるべく広い所で避けるようにしたい。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a18" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -303,85 +335,114 @@
                 <div class="section-info">
                     <h4>説明</h4>
                     <p>プレイヤーが立っている所を中心に爆発を9回起こす。<br>
-                       常にプレイヤーの場所を中心に爆弾を設置するので振り切ることは出来ない。</p>
+                        常にプレイヤーの場所を中心に爆弾を設置するので振り切ることは出来ない。</p>
                     <h4>対処法</h4>
                     <p>爆発までに十分な時間があるので、折り返さずに動き続けていれば全て避けられる。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a19" class="section-card">
+            <article id="a19" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>19. 重力</h3>
                 <div class="section-info">
                     <p>強い力で天使を中心に引っ張ってくる。<br>
-                       引っ張っている最中に全方位弾幕と同じ球を少しずつ飛ばしてくる。<br>
-                       吸引が終わると、さらに全方位に球を飛ばしてくる。</p>
+                        引っ張っている最中に全方位弾幕と同じ球を少しずつ飛ばしてくる。<br>
+                        吸引が終わると、さらに全方位に球を飛ばしてくる。</p>
                     <h4>対処法</h4>
                     <p>天使と逆に動き続けていれば耐えられるようになっている。<br>
-                       終了時の球はかなり速く数も多いので、吸引が終わっても距離をとるようにしたい。</p>
+                        終了時の球はかなり速く数も多いので、吸引が終わっても距離をとるようにしたい。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a20" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>20. 狙撃</h3>
                 <div class="section-info">
                     <p>薙ぎ払いと同じビームを4回撃ってくる。<br>
-                       薙ぎ払いとは違い、常にプレイヤーを狙い続けてくる。<br>
-                       また、予備動作と1本あたりの効果時間が短い。</p>
+                        薙ぎ払いとは違い、常にプレイヤーを狙い続けてくる。<br>
+                        また、予備動作と1本あたりの効果時間が短い。</p>
                     <h4>対処法</h4>
                     <p>狙い続けてくるといっても撃つ直前には固定されるので、動き続けていれば良い。<br>
-                       ただし、毎回ビームの中心が変わるので動き方も少し変える必要がある。</p>
+                        ただし、毎回ビームの中心が変わるので動き方も少し変える必要がある。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a21" class="section-card">
+            <article id="a21" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>21. 巨大波動</h3>
                 <div class="section-info">
-                    <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
+                    <h4>説明</h4>
+                    <p>かなり大きい紫の球を真っ直ぐ飛ばしてくる。<br>
+                        球の速度はゆっくりで、飛んでいる間X砲台の十字のビームと全方位弾幕の球を出し続ける。<br>
+                        壁に当たるまで進み続け、当たると爆発する。</p>
+                    <h4>対処法</h4>
+                    <p>球は曲がらないので、とにかく直線上に距離をとる。<br>
+                        十字ビームの角度は少しずつズレていくので、タイミングが重要だ。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a22" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>22. 蛇行弾</h3>
                 <div class="section-info">
-                    <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
+                    <h4>説明</h4>
+                    <p>正弦波状に飛ぶ、青緑の球を36個出す。<br>
+                        サイズは全方位弾幕とほぼ同じ。<br>
+                        球を飛ばす角度は、撃っている間も更新され続けている。</p>
+                    <h4>対処法</h4>
+                    <p></p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a23" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>23. 黒斧</h3>
                 <div class="section-info">
-                    <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
+                    <h4>説明</h4>
+                    <p>黒い斧を作り出し、こちらに投げてくる。<br>
+                        斧は上に飛ばされた後、赤い矢印を通って下に落ちていく。<br>
+                        斧の当たり判定は矢印の上だけでなく、投げられてからずっとある。</p>
+                    <h4>対処法</h4>
+                    <p>斧は重力によって下に飛んでくるので、横に避ける。<br>
+                        天使の下側にいると、斧が上昇している時に当たる心配がなく、着弾も遅いので避けやすい。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a24" class="section-card">
+            <article id="a24" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>24. 四連黒斧</h3>
                 <div class="section-info">
-                    <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
+                    <h4>説明</h4>
+                    <p>黒斧を4つ連続で投げてくる。<br>
+                        技の解説は黒斧のカードを参照。</p>
+                    <h4>対処法</h4>
+                    <p>黒斧と同じく横に避ける。<br>
+                        連続で飛んでくる分、避けきるのがシビアになっている。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a25" class="section-card">
+            <article id="a25" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>25. 四武器</h3>
                 <div class="section-info">
-                    <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
+                    <h4>説明</h4>
+                    <p>黒剣・黒槍・黒斧・黒星を同時に発射してくる。<br>
+                        各技の解説はそれぞれのカードを参照。</p>
+                    <h4>対処法</h4>
+                    <p>天使の真上か真下、腕の長さの距離で横に動く。<br>
+                        腕の中で動くことで黒槍を回避、横に動くことで黒剣と黒斧を避けられる。<br>
+                        黒剣と黒斧を避けたあとも黒星が残っているので、気を抜かず回転に合わせて動く。<br>
+                        縦に動くと、黒斧を避けた際に腕より離れて槍に当たることがあるので、あまりおすすめしない。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a26" class="section-card">
+            <article id="a26" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>26. 壁の光球腕</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a27" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -389,7 +450,7 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a28" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -397,7 +458,7 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a29" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -405,7 +466,7 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a30" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -413,7 +474,7 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a31" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -421,7 +482,7 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a32" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -429,55 +490,55 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a33" class="section-card">
+            <article id="a33" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>33. 分離</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a34" class="section-card">
+            <article id="a34" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>34. 腕の壁</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a35" class="section-card">
+            <article id="a35" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>35. 腕の濁流</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a36" class="section-card">
+            <article id="a36" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>36. 張り手</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a37" class="section-card">
+            <article id="a37" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>37. ひっかき</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a38" class="section-card">
+            <article id="a38" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>38. 挟み撃ち</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a39" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -485,23 +546,23 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a40" class="section-card">
+            <article id="a40" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>40. 連打</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a41" class="section-card">
+            <article id="a41" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>41. 合掌</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a42" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -509,55 +570,55 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a43" class="section-card">
+            <article id="a43" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>43. 四本黒槍</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a44" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
-                <h3>434 黒剣</h3>
+                <h3>44. 黒剣</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a45" class="section-card">
+            <article id="a45" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>45. 連剣</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a46" class="section-card">
+            <article id="a46" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>46. 瓦礫投げ</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a47" class="section-card">
+            <article id="a47" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>47. ブーメラン</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a48" class="section-card">
+            <article id="a48" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>48. 地ならし</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a49" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -565,47 +626,47 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a50" class="section-card">
+            <article id="a50" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>50. 風車</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a51" class="section-card">
+            <article id="a51" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>51. 連続壁腕</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a52" class="section-card">
+            <article id="a52" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>52. 腕の牢</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a53" class="section-card">
+            <article id="a53" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>53. 輪を描く弾</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a54" class="section-card">
+            <article id="a54" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>54. 巨大な手のひら</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
             <article id="a55" class="section-card">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
@@ -613,15 +674,15 @@
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
-            <article id="a56" class="section-card">
+            <article id="a56" class="section-card orange">
                 <a href="proposal.html?area=天使" class="card-btn-topright">編集する</a>
                 <h3>56. 衝撃の連鎖</h3>
                 <div class="section-info">
                     <p>このカードはまだ空です。右上のボタンから編集することができます。</p>
                 </div>
-                <div class="back-to-top"><a href="#">▲目次へ戻る</a></div>
+                <div class="back-to-top"><a href="#anchor">▲目次へ戻る</a></div>
             </article>
         </section>
     </main>
@@ -629,4 +690,5 @@
     <!-- jsファイル読み込み -->
     <script src="script.js"></script>
 </body>
+
 </html>

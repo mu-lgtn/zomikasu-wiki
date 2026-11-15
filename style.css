@@ -242,8 +242,8 @@ p {
 }
 
 /*ブキページ目次(リンク一覧)のスタイル*/
-.weapon-anchor {
-    background-color: #f0f6ff;
+.section-anchor {
+    background-color: #f7faff;
     border: 1px solid #dbeafe;
     border-radius: 6px;
     padding: 20px;
@@ -366,6 +366,9 @@ p {
     border-left: 4px solid #3b82f6;
     padding-left: 10px;
     margin-bottom: 15px;
+}
+.section-card.orange h3 {
+    border-left-color: #fac73c;
 }
 .section-info p {
     margin-bottom: 8px;
